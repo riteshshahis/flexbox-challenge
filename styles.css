@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+nav{
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+}
+
+nav div{
+    width: 10%;
+    /* height: 100%; */
+    background-color: green;
+    text-align: center;
+    list-style: none;
+}
+
+nav ul {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5px;
+}
+
