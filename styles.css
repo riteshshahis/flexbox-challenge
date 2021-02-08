@@ -23,19 +23,20 @@ nav div{
 
 nav ul {
     width: 60%;
-    height: 100%;
+    height: 100%; /* takes height from parent */
     display: flex;
     justify-content: space-around;
     text-align: center;
     padding: 5px;
     list-style: none;
-
+    font-size: x-large;
+    
 }
 
 main {
     height: 600px;
-    width: 100%;
-    border: 1px solid black;
+    width: 100%; /* takes from parent */
+    border: 2px solid black;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -46,30 +47,57 @@ main section{
 }
 
 .left {
-width: 60%;
+width: 60%; /* 60% of width for this side */
 display: flex;
 justify-content: space-between;
 flex-direction: column;
 }
 
-.left div {
+.left div { /* applied to each div entry*/
     width: 100%;
     height: 150px;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
-.left div ul{
+
+.left div .block1{
     height: 100%;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* horizontal as direction is row*/
+    align-items: center; /* vertical as direction is row*/
 }
-.left div ul li{
-    margin: 10px 25px;
+
+
+.left div .block2{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* horizontal as direction is row*/
+    align-items: center; /* vertical as direction is row*/
+}
+
+.left div .block3{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* horizontal as direction is row*/
+    align-items: center; /* vertical as direction is row*/
+}
+.left div ul li{ /* applied to each list entry*/
+    height: 80px;
+    width: 80px;
+    background-color:black;  
+    margin: 10px 10px;
+    display: flex;
+    color: white;
 }
     
 .right {
-    width: 30%;
+    width: 30%; /* leaves 10% as space in between two sections */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    border: 1px solid black;
+    border: 3px solid black;
+    font-size: medium;
 }
